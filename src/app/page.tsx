@@ -5,8 +5,11 @@ import VersionsInfo from "@/components/versions";
 
 export default function Home() {
   return (
-    <main>
-   
+    <main className="h-screen grid grid-cols-12">
+      <div>
+        
+      </div>
+      <div></div>
     </main>
   );
 }
