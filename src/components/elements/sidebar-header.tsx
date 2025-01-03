@@ -1,20 +1,12 @@
 import React from "react";
 import { Card } from "../ui/card";
-
-interface GeneralInfo {
-  system: {
-    manufacturer: string;
-    version: string;
-  };
-}
+import { GeneralInfo } from "../../types/Generalnformation";
 
 interface SidebarHeaderProps {
-  generalInformation: GeneralInfo | null;
+  allInformation: GeneralInfo | null;
 }
 
-export default function SidebarHeader({
-  generalInformation,
-}: SidebarHeaderProps) {
+export default function SidebarHeader({ allInformation }: SidebarHeaderProps) {
   return (
     <>
       <Card className="p-4 rounded-none border-x-0 shadow-none">
@@ -22,11 +14,9 @@ export default function SidebarHeader({
       </Card>
 
       <div className="p-4">
-        <p className="tracking-wider text-2xl">
-          {generalInformation?.system?.manufacturer}
-        </p>
+        <p className="tracking-wider text-2xl">{allInformation?.system.manufacturer}</p>
         <p className="text-sm text-muted-foreground">
-          {generalInformation?.system?.version}
+          {allInformation?.system.version}
         </p>
       </div>
     </>

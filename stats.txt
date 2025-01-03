@@ -1,0 +1,13 @@
+Graphics
+OS
+Processes / Services
+Disks / FS
+USB
+Printer
+Audio
+Network
+Wifi
+Bluetooth
+Docker
+Virtual Box
+Observers / Stats
