@@ -17,7 +17,7 @@ export interface GeneralInfo {
     revision: string;
     socket: string;
     speed: string;
-    speedmax: string;
+    speedmax: number;
     speedmin: string;
     stepping: string;
     vendor: string;
@@ -26,5 +26,38 @@ export interface GeneralInfo {
   os: {
     platform: string;
     release: string;
+  };
+  battery: {
+    acConnected: boolean;
+    capacityUnit: string;
+    currentCapacity: number;
+    cycleCount: number;
+    designedCapacity: number;
+    hasBattery: boolean;
+    isCharging: boolean;
+    manufacturer: string;
+    maxCapacity: number;
+    model: string;
+    percent: number;
+    serial: string;
+    timeRemaining: number;
+    type: string;
+    voltage: number;
+  };
+  mem: {
+    active: number;
+    available: number;
+    free: number;
+    total: number;
+    buffers: number;
+    buffcache: number;
+    swaptotal: number;
+    swapused: number;
+    swapfree: number;
+    slab: number;
+    used: number;
+    writeback: number;
+    cached: number;
+    dirty: number;
   };
 }

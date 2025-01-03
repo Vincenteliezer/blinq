@@ -1,4 +1,3 @@
-// app/api/system-info/route.ts
 import { cpu, osInfo, system, time } from "systeminformation";
 import { NextResponse } from "next/server";
 
